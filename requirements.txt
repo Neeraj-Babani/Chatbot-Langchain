@@ -1,5 +1,5 @@
-1. Langchain
-2. openai
-3. streamlit
-4. streamlit-chat
-5. sentence_transformers
+Langchain
+openai
+streamlit
+streamlit-chat
+sentence_transformers
