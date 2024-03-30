@@ -15,7 +15,7 @@ import streamlit as st
 from streamlit_chat import message
 from utils import *
 headers={
-    'authorizations'=st.secrets['OPENAI_API_KEY']
+    'authorizations':st.secrets['OPENAI_API_KEY']
 }
 st.subheader("Farmbot")
 
