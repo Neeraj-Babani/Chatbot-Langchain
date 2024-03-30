@@ -3,10 +3,12 @@ import streamlit as st
 from sentence_transformers import SentenceTransformer
 from pinecone import Pinecone
 import os 
-from dotenv import load_dotenv
+'''from dotenv import load_dotenv
 load_dotenv()
-os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')
- 
+os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')'''
+headers={
+    'authorizations'=st.secrets['PINECONE_API_KEY']
+}
 model=SentenceTransformer("all-MiniLM-L6-v2")
 
 
