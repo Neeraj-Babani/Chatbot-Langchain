@@ -7,7 +7,7 @@ import os
 load_dotenv()
 os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')'''
 headers={
-    'authorizations'=st.secrets['PINECONE_API_KEY']
+    'authorizations':st.secrets['PINECONE_API_KEY']
 }
 model=SentenceTransformer("all-MiniLM-L6-v2")
 
