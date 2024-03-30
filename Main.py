@@ -2,7 +2,7 @@
 from dotenv import load_dotenv
 load_dotenv()
 os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')'''
-from langchain_openai import ChatOpenAI
+from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 from langchain.prompts import (
