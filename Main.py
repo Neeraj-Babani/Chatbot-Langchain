@@ -1,7 +1,7 @@
-import os
+'''import os
 from dotenv import load_dotenv
 load_dotenv()
-os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')
+os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')'''
 from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
@@ -14,7 +14,9 @@ from langchain.prompts import (
 import streamlit as st
 from streamlit_chat import message
 from utils import *
-
+headers={
+    'authorizations'=st.secrets['OPENAI_API_KEY']
+}
 st.subheader("Farmbot")
 
 if 'responses' not in st.session_state:
